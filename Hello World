@@ -1,0 +1,33 @@
+C++ programs have the file extension .cpp 
+
+  
+
+The terminal is the black panel to code on 
+
+  
+
+int main() is used to start a program 
+
+  
+
+#include <iostream> is a library  
+
+  
+
+std::cout is the "character output stream" 
+
+  
+
+<< is an operator used next to cout 
+
+  
+
+Use ";" to tell the computer you are at the end of a statement 
+
+  
+
+\n is used to start a new line 
+
+Example: 
+
+std::cout<<"Hello World!\n"; 
