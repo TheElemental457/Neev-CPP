@@ -1,0 +1,305 @@
+Functions 
+
+The purpose of a function is to make a group of code to accomplish a task 
+
+  
+
+For example 
+
+make_sandwich() makes a sandwich 
+
+  
+
+A function can: 
+
+Make a single line that can fire off a lot of lines of code 
+
+Functions help your code become modular 
+
+  
+
+C++ comes in with built in functions including headers such as <cmath> 
+
+  
+
+In <cmath> you can use the sqrt() function to find a sqrt of a number 
+
+  
+
+When using rand(), rand() % 28 would output a random number between 0 and 28 
+
+  
+
+If you want to make a function with no input and output, use void before the function 
+
+  
+
+This is ideally used for situations where you want to print stuff to the terminal 
+
+  
+
+The syntax for a function is: 
+
+returntype  functioname( any, parameters, you, have) { 
+
+   // Code block here 
+
+   return output if there is any; 
+
+}  
+
+  
+
+When calling a function, the syntax is: 
+
+function_name(); 
+
+  
+
+When you want to return a function, here are some example of data types that can be used: 
+
+double 
+
+int 
+
+bool 
+
+char 
+
+std::string 
+
+std::vector 
+
+  
+
+The return statement is the last line of code that a function will execute 
+
+  
+
+A return value works by returning to the place where the function was called 
+
+  
+
+For example, in: 
+
+std::string feed_the_cat() { 
+
+  return "Cat is fed!"; 
+
+} 
+
+and then you say: 
+
+int main() { 
+
+  std::string cat_message = feed_the_cat(); 
+
+  std::cout << cat_message; 
+
+} 
+
+  
+
+The return value on the function is what gets printed to the terminal 
+
+  
+
+The return value must be the same as the functions return type 
+
+  
+
+You can add a parameter to insert a placeholder for an input value in a functions call 
+
+  
+
+Syntax: 
+
+int do_something(int num) 
+
+  
+
+Then, you can write: 
+
+int main(){ 
+
+     do_something(5) 
+
+     return 0; 
+
+} 
+
+  
+
+You can call multiple parameters per function 
+
+  
+
+Make sure to call it in the correct order you put the parameter in 
+
+  
+
+Syntax:  
+
+double get_tip(double price, double tip, bool total_included) 
+
+get_tip(45.50, 0.25, true); 
+
+  
+
+The function must call the same number of arguments are there are parameters 
+
+  
+
+Scope is the region of code that can view a given element 
+
+  
+
+Variables in global scope are used throughout the program 
+
+  
+
+Variables defined in a function are only able to be used in a function 
+
+  
+
+When code gets longer, it's better to use the same function in many files 
+
+  
+
+You can move functions to different files by saying g++ file 1 file 2 
+
+  
+
+You can take all function declarations and put them in a header file, ending with .h or .hpp 
+
+  
+
+If your function definitions are in my_functions.cpp, the header file would be my_functions.hpp or my_functions.h 
+
+  
+
+With headers, you can do #include "whatever.hpp" at the top of you rmain program 
+
+  
+
+An inline function is a function definition in a header file 
+
+  
+
+Use inline at the top for that 
+
+  
+
+Syntax: 
+
+inline  
+
+void eat() { 
+
+  std::cout << "nom nom\n"; 
+
+} 
+
+  
+
+Inline helps the compiler insert a functions body where the function call is 
+
+  
+
+You probably wont use inline  
+
+  
+
+Inline functions are functions in classes  
+
+  
+
+You can use default arguments to input values that are default in the function 
+
+  
+
+Syntax: 
+
+void intro(std::string name, std::string lang = "C++"); 
+
+  
+
+Then, instead of an error, your function will run with the default value if no value in inputted 
+
+  
+
+If we want a function to accept an argument that can be a int or double, you use something called function overloading 
+
+  
+
+You can give multiple functions the same name, but make sure they have either or both 
+
+-A different type of parameter 
+
+-Different number of parameters 
+
+  
+
+If you want to have two functions with different types but with same bodies, you can use templates 
+
+  
+
+Templates are ways for people to use data types as parameters 
+
+  
+
+std::string and std::vector are both template-based types and more can be found in the C++ standard library 
+
+  
+
+Syntax for template: 
+
+template <typename T> 
+
+void print_cat_ears(T item) { 
+
+  std::cout << " " << item << "   " << item << " " << "\n"; 
+
+  std::cout << item << item << item << " " << item << item << item << "\n"; 
+
+} 
+
+  
+
+You can use print_cat_ears() with a parameter of any type you want, as long as the type can be used with the methods expected 
+
+  
+
+For example, an std::vector wont work with "<<" 
+
+  
+
+Note: Using templates will slow down the program’s compile time, but speed up the execution time 
+
+  
+
+More syntax: 
+
+template <typename T> 
+
+return_type some_function_name(T item1, T item2) { 
+
+  // do stuff with item1 and item2 
+
+} 
+
+  
+
+If the template’s return type is flexible or depends on the implementation, it can be type T like this: 
+
+template <typename T> 
+
+T some_function_name(T item1, T item2) { 
+
+  // do stuff with item1 and item2 
+
+ } 
+
+ 
+
+Make sure at the top, put #include "(name of file).hpp"  
