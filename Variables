@@ -1,0 +1,79 @@
+A variable is a name for a piece of computer memory that has been set aside for you to store, retrieve, and use data 
+
+  
+
+int: integer numbers 
+
+double: floating-point numbers 
+
+char: characters 
+
+string: a sequence of characters 
+
+bool: true/false values 
+
+  
+
+To declare a variable called score thats an integer, say: 
+
+int score; 
+
+  
+
+In C++, variable names consist only of upper/lower case letters, digits, and/or underscores 
+
+  
+
+You can set score to a different value by saying: 
+
+score=0 
+
+  
+
+You can take int score and score=0 into one line of code by saying: 
+
+int score=0 
+
+  
+
++=addition 
+
+-=subtraction 
+
+*=multiplication 
+
+/=division 
+
+%=modulo(remainder) 
+
+  
+
+In: 
+
+int age = 28; 
+
+std::cout << "Hello, I am "; 
+
+std::cout << age; 
+
+std::cout << " years old\n"; 
+
+This will say "Hello I am 28 years old" 
+
+  
+
+You can also do: 
+
+std::cout << "Hello, I am " << age << " years old\n"; 
+
+  
+
+When asking for input, use: 
+
+std::cin>>(whatever you want to ask) 
+
+  
+
+For example: 
+
+std::cin>>tip; 
