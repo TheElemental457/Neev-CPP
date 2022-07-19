@@ -1,0 +1,65 @@
+There are two types of compile time errors: 
+
+  
+
+Syntax errors: 
+
+Errors that occur when syntax is violated 
+
+  
+
+Type errors: 
+
+Errors that occur when there is a mismatch between the types we declared 
+
+  
+
+Some common syntax errors are: 
+
+Missing semicolon  
+
+Missing closing parenthesis , square bracket , or curly brace 
+
+  
+
+Some common type errors are: 
+
+Forgetting to declare a variable 
+
+Storing a value into the wrong type 
+
+  
+
+A link time error happens when the program needs some library of function it cannot find 
+
+  
+
+When programs get bigger, it is good to separate programs into different files 
+
+  
+
+Examples of link time errors: 
+
+Writing a function that was never defined 
+
+Writing main() instead of main() 
+
+  
+
+A run-time error happens when the program runs but the computer is unable to do something reliably that it is told to 
+
+  
+
+An example of a run time error is: 
+
+Division by 0 
+
+Tying to open a file that doesn't exist 
+
+  
+
+A logic error happens when a program provides incorrect input 
+
+  
+
+This happens a lot to beginners and are the hardest to find 
