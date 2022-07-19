@@ -1,0 +1,69 @@
+To use vectors, use the header #include <vector> 
+
+  
+
+Syntax to create a vector: 
+
+std::vector<type> name; 
+
+  
+
+Example of creating a vector of integers called "calories_today" 
+
+std::vector<int> calories_today; 
+
+  
+
+A vector is a dynamic list of items that can shrink and grow in size 
+
+  
+
+To initialize a vector, use this syntax: 
+
+std::vector<double> location = {42.651443, -73.749302}; 
+
+Here we are giving latitude and longitude 
+
+  
+
+To initialize vectors without knowing the values we want to put in, say: 
+
+std::vector<type> name(amount); 
+
+  
+
+In a vector, the first item's index is 0, second is 1, etc... 
+
+  
+
+To find an individual element, the syntax is: 
+
+nameofvector[n-1] 
+
+  
+
+To add an element to the end of a vector, use: 
+
+nameofvector.push_back(elementname) 
+
+  
+
+To remove elements from the back, use: 
+
+nameofvector.pop_back() 
+
+  
+
+To find the number of elements in a vector, use: 
+
+nameofvector.size() 
+
+  
+
+Neat code example on how to change each value of a vector: 
+
+for (int i = 0; i < vector.size(); i++) { 
+
+  vector[i] = vector[i] + 10; 
+
+} 
