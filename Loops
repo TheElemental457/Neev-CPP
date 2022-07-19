@@ -1,0 +1,45 @@
+A while loop is an if loop but continues running until the condition outputs false 
+
+  
+
+Syntax: 
+
+while (condition) { 
+
+  statements 
+
+} 
+
+  
+
+A for loop is a loop to repeat something a certain amount of times 
+
+  
+
+Syntax: 
+
+for (int i = 0; i < 20; i++) { 
+
+  std::cout << "I will not throw paper airplanes in class.\n" 
+
+{ 
+
+  
+
+This for loop will repeat 20 times 
+
+  
+
+i++ is the same thing as i=i+1 
+
+  
+
+Decrementing Syntax: 
+
+for (int i = 20; i > 0; i--)  
+
+{ 
+
+  // Statements 
+
+} 
