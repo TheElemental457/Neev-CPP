@@ -1,0 +1,31 @@
+A complier can translate C++ programs to machine code 
+
+  
+
+To compile a file, use g++(file name) 
+
+  
+
+To execute code files, you need to type "./" 
+
+followed by the machine code file name 
+
+  
+
+CPU stands for Central Processing Unit 
+
+  
+
+If we want to name the machine file name, use -o (file name) 
+
+Example: 
+
+g++ hello.cpp -o hello 
+
+  
+
+Single line comments are //, and multiple line comments are /* and *\ 
+
+ 
+
+Use command prompt to do this on Windows 
