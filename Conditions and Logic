@@ -1,0 +1,151 @@
+An if statement is used to check if a statement is true 
+
+  
+
+The syntax for this is: 
+
+if(condition){ 
+
+  some code 
+
+} 
+
+  
+
+For example: 
+
+if(flip==1){ 
+
+  std::cout<<"Heads\n"; 
+
+  
+
+If the condition is false in the if loop, the code will not execute 
+
+  
+
+== equal to 
+
+!= not equal to 
+
+> greater than 
+
+< less than 
+
+>= greater than or equal to 
+
+<= less than or equal to 
+
+  
+
+Adding an else to an if condition will cause the else to run if the if statement runs false 
+
+  
+
+Syntax: 
+
+if (condition) { 
+
+  do something 
+
+} else { 
+
+  do something else 
+
+} 
+
+  
+
+Example: 
+
+if (coin == 1) { 
+
+  std::cout << "Heads\n"; 
+
+} 
+
+else { 
+
+  std::cout << "Tails\n"; 
+
+} 
+
+  
+
+If you want two different countcomes, use if else 
+
+  
+
+Syntax: 
+
+if (condition) { 
+
+  some code 
+
+} else if (condition) { 
+
+  some code 
+
+} else { 
+
+  some code 
+
+} 
+
+  
+
+You can have multiple if else statements in one if condition 
+
+  
+
+The swritch statement is used to write multiple outcomes 
+
+  
+
+Syntax: 
+
+switch (grade) { 
+
+  case 9: 
+
+    std::cout << "Freshman\n"; 
+
+    break; 
+
+  case 10: 
+
+    std::cout << "Sophomore\n"; 
+
+    break; 
+
+  case 11: 
+
+    std::cout << "Junior\n"; 
+
+    break; 
+
+  case 12: 
+
+    std::cout << "Senior\n"; 
+
+    break; 
+
+  default: 
+
+    std::cout << "Invalid\n"; 
+
+    break; 
+
+} 
+
+  
+
+If the value of the grade is 9, 10, etc.., output the case under it 
+
+  
+
+The break keyword tells the computer to exit the block and not check for more code  
+
+  
+
+If the value of grade is not 9, 10, 11, or 12, the default case will run (its like the else) 
