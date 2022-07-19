@@ -1,0 +1,55 @@
+The "and" logical operator is denoted by && 
+
+  
+
+Here an example for a truth table for and: 
+
+a b a && b 
+
+false false false 
+
+false true false 
+
+true false false 
+
+true true true 
+
+  
+
+Use == when saying a variable is equal to something in a loup 
+
+  
+
+The "or" operator is denoted by || 
+
+  
+
+Here is the truth table: 
+
+a b a || b 
+
+false false false 
+
+false true true 
+
+true false true 
+
+true true true 
+
+  
+
+The "not" operator is denoted by ! 
+
+  
+
+The use of the not operator is to reverse the bool outcome of the expression 
+
+  
+
+Here is the truth table: 
+
+a !a 
+
+false true 
+
+true false 
