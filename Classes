@@ -1,0 +1,99 @@
+Classes
+You can make your own "type" using classes, like int and double
+
+Classes are blueprints for objects (like age is an instance of int)
+
+An object gets characteristics from its class
+
+Syntax for class:
+class hello{
+/whatever
+}; 
+
+There is a semicolin at the end of the class header!
+
+You can get a strings size using .length()
+
+There are two types of class members:
+
+Attributes (member data) consists of information about an instance of the class.
+
+Methods are functions that you can use with an instance of the class. 
+
+We encapsulate for simpler user access, attributes and methods in a class like this:
+class City {
+   // attribute
+  int population;
+ // we'll explain 'public' later
+public:
+  // method
+  void add_resident() {
+    population++;
+  }
+};
+
+You can define methods outside a class by:
+int City::get_population() {
+  return population;
+}
+
+Make sure to use include in the header
+
+To create an object, syntax is:
+NameOfClass NameOfObject;
+
+To give properties to the class, syntax is 
+NameOfObject.Atribute=(value)
+
+In a class, anything with a public keyword everyone can see, including other classes
+
+Anything that is private is limited to the scope of the class
+
+Syntax:
+class City {
+  int population; 
+public:
+  void add_resident() { 
+    population++;
+  }
+private: // this stuff is private
+  bool is_capital;
+};
+
+To give a object data right as it is constructed, use contructors
+
+Syntax: 
+City::City(std::string new_name, int new_pop) {
+  name = new_name;
+  population = new_pop;
+}
+
+To instantiate objects with atributes, syntax (in int main()):
+
+City ankara("Ankara", 5445000);
+
+Destructors are ways to delate objects to prevent memory leaks
+
+Syntax:
+// city.hpp
+class City {
+  std::string name;
+  int population;
+public:
+  City(std::string new_name, int new_pop);
+  ~City();
+};
+
+// city.cpp
+City::~City() {
+  // any final cleanup
+}
+
+The syntax uses a "~"
+
+The destructor will be called automatically in any of the following scenarios:
+The object moves out of scope.
+The object is explicitly deleted.
+When the program ends.
+Link for cheatsheet because this was a little confusing:
+https://www.codecademy.com/learn/learn-c-plus-plus/modules/learn-cpp-classes-and-objects/cheatsheet
