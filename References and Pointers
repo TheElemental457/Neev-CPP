@@ -1,0 +1,104 @@
+A computers memory is made out of a sequence of bytes. This is called an address
+
+For example, in:
+int power=9000,
+
+it will set an int-size peice of memory for the variable power
+
+A reference variable is an alisas for something else, or another name for an existing variable
+
+Syntax:
+int &sonny = songqiao;
+
+So now, sonny is a reference to sonqiao
+
+So when sonny changes, sonqiao changes
+
+Aliases cannot be changed to alias something else
+
+A use for references:
+When passing parameters to a function, normal variables were used, but you can modify the value of the arguement because they are out of scope
+
+Pass-by-reference refers to passing parameters using references
+
+This allows you to:
+-Modify the value of the function arguments
+-Avoid making copies of a variable/object for performance reasons
+
+For example, in:
+void swap_num(int &i, int &j) {
+ 
+  int temp = i;
+  i = j;
+  j = temp;
+ 
+}
+ 
+int main() {
+ 
+  int a = 100;
+  int b = 200;
+ 
+  swap_num(a, b);
+ 
+  std::cout << "A is " << a << "\n";
+  std::cout << "B is " << b << "\n";
+ 
+},
+ 
+without references it would output A as 100 and B as 200. But with references A would be 200 and B would be 100
+
+The const keyword tells the compiler that you wont change something
+
+Syntax:
+double const pi=3.14
+
+So pi will be 3.14 throughout the program
+
+Example:
+int triple(int const i) {
+ 
+  return i * 3;
+ 
+}
+
+In this, i wil stay the same but i will be multiplied, resulting in an error
+
+By making the i a reference, this wont happen
+
+This saves computational cost for a function that doesn't modify parameter value
+
+& can also have another meaning, to get the address of the location in the memory of an object
+
+Example:
+std::cout << &porcupine_count << "\n";
+
+This would result in the memory adress being printed 
+
+When & is used in a declaration, it is a reference operator
+
+When & is not used in a declaration, it is an address operator
+
+A pointer variable stores a memory address
+
+int* means pointer to int
+
+int*ptr=&gum would make the memory address of gum be in ptr
+
+The way to find the value pointed to by a pointer is by using "*"
+
+Example:
+int blah=*ptr
+
+In std::cout<<*ptr<<"\n"; , this will output the value of the memory address, not the memory address itself
+
+When * is used in a declaration, it is creating a pointer
+When * is not used in a declaration, it is a dereference operator
+
+When you dont know what to assign a pointer to, use:
+int*ptr=nullptr;
+
+Cheatsheet because this was somewhat confusing:
+https://www.codecademy.com/learn/learn-c-plus-plus/modules/learn-cpp-references-and-pointers/cheatsheet
+
+
